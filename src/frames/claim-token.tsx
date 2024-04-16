@@ -15,37 +15,7 @@ export const claimFrame = async (c: any) => {
 
   if (!!user?.viewer_context?.followed_by && !failed) {
     return c.res({
-      image: (
-        <div
-          style={{
-            alignItems: 'center',
-            background: 'black',
-            backgroundSize: '100% 100%',
-            display: 'flex',
-            flexDirection: 'column',
-            flexWrap: 'nowrap',
-            height: '100%',
-            justifyContent: 'center',
-            textAlign: 'center',
-            width: '100%',
-          }}
-        >
-          <div
-            style={{
-              color: 'white',
-              fontSize: 60,
-              fontStyle: 'normal',
-              letterSpacing: '-0.025em',
-              lineHeight: 1.4,
-              marginTop: 30,
-              padding: '0 120px',
-              whiteSpace: 'pre-wrap',
-            }}
-          >
-            {'Proceed with Firefly/Bloom to validate your SMR and receive TOKEN!'}
-          </div>
-        </div>
-      ),
+      image: 'https://i.imgur.com/SfaOUlv.png',
       intents: [
         <Button.Link
           href={
@@ -93,37 +63,7 @@ export const claimFrame = async (c: any) => {
     });
   } else {
     return c.res({
-      image: (
-        <div
-          style={{
-            alignItems: 'center',
-            background: 'black',
-            backgroundSize: '100% 100%',
-            display: 'flex',
-            flexDirection: 'column',
-            flexWrap: 'nowrap',
-            height: '100%',
-            justifyContent: 'center',
-            textAlign: 'center',
-            width: '100%',
-          }}
-        >
-          <div
-            style={{
-              color: 'white',
-              fontSize: 60,
-              fontStyle: 'normal',
-              letterSpacing: '-0.025em',
-              lineHeight: 1.4,
-              marginTop: 30,
-              padding: '0 120px',
-              whiteSpace: 'pre-wrap',
-            }}
-          >
-            {'Follow JustBuild first!'}
-          </div>
-        </div>
-      ),
+      image: 'https://i.imgur.com/QfmQW2s.gif',
       intents: [
         <Button.Redirect location="https://warpcast.com/justbuild">Follow</Button.Redirect>,
       ],
